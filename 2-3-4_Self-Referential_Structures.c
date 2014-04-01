@@ -24,15 +24,13 @@
 int main (void)
 {
   /* Self-Referential Structure according to book.
-   * CANNOT BE COMPILED!
-   */
+   * CANNOT BE COMPILED! */
   typedef struct list {
     char data;
     list *link;
   };
 
-  /* One of the ways how to define Self-Referential Structure.
-   */
+  /* One of the ways how to define Self-Referential Structure. */
   typedef struct list2 {
     char data;
     struct list2* link;

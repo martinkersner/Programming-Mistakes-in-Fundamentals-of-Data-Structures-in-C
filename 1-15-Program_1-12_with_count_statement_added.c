@@ -16,10 +16,10 @@
 
 float rsum(float list[], int n)
 {
-  count++;
+  count++; /* for if conditional */
 
   if (n) {
-    count++;
+    count++; /* for return and rsum invocation */
     return rsum(list, n-1) + list[n-1];
   }
 
